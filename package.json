@@ -1,0 +1,9 @@
+{
+  "name": "react-native-sdk",
+  "version": "0.1.0",
+  "description": "official react native sdk for MIPS payment gateway",
+  "packageManager": "yarn@4.3.1",
+  "dependencies": {
+    "your-obfuscated-package": "mips-package.tgz"
+  }
+}
