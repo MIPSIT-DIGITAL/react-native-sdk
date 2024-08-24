@@ -1,7 +1,7 @@
 ## Installation
 
 ```  bash 
-npm install react-native-sdk
+npm i mu.mips.react-native-sdk
 ```
 ## Usage
 
