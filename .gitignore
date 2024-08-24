@@ -13,3 +13,7 @@
 .pnp.*
 
 node_modules
+.idea
+example
+
+*.tgz
