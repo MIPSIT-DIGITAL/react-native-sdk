@@ -3471,6 +3471,14 @@ p-try@^2.0.0:
   resolved "https://registry.npmjs.org/p-try/-/p-try-2.2.0.tgz"
   integrity sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==
 
+packageTar@mips-package.tgz:
+  version "0.1.0"
+  resolved "file:mips-package.tgz"
+  integrity sha512-lM+jV0AaQrS2Iz1V58wy5gUb/KzPkPw75g6J7eR+OESHwrk4GNlXWMsYXpk0GPTMDpY9eGLWJiDt4HZpLVHCQA==
+  dependencies:
+    guid-typescript "^1.0.9"
+    uuidv4 "^6.2.13"
+
 parent-module@^1.0.0:
   version "1.0.1"
   resolved "https://registry.npmjs.org/parent-module/-/parent-module-1.0.1.tgz"
@@ -4426,11 +4434,3 @@ yocto-queue@^0.1.0:
   version "0.1.0"
   resolved "https://registry.npmjs.org/yocto-queue/-/yocto-queue-0.1.0.tgz"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
-
-your-obfuscated-package@mips-package.tgz:
-  version "0.1.0"
-  resolved "file:mips-package.tgz"
-  integrity sha512-lM+jV0AaQrS2Iz1V58wy5gUb/KzPkPw75g6J7eR+OESHwrk4GNlXWMsYXpk0GPTMDpY9eGLWJiDt4HZpLVHCQA==
-  dependencies:
-    guid-typescript "^1.0.9"
-    uuidv4 "^6.2.13"
