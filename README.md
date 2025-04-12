@@ -15,7 +15,7 @@ import {
   MerchantDetails,
   MerchantCredentials,
   Currency,
-} from "mu.mips.react-native-sdk";
+} from "mu.mips.react-native-sdk/src";
 ```
 
 #### 2. create order data and merchant data models
@@ -35,7 +35,7 @@ const detail = new MerchantDetails(
 
 const cred = new MerchantCredentials(
 	"XXXXX", //username
-	"XXXXX". //password
+	"XXXXX" //password
 );
 // above info will be provided by MIPS admin
 ```
