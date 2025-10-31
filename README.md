@@ -1,80 +1,49 @@
-## Installation
+# ⚛️ Mips Payment SDK – React Native & Expo Integration Guide
 
-```bash
-npm i mu.mips.react-native-sdk
-```
+Integrate the **Mips Payment SDK** seamlessly into your **React Native** or **Expo** applications.  
+Follow our official guides below for setup, configuration, and usage instructions.
 
-## Usage
+---
 
-#### 1. import required classes
+## 🚀 Integration Guides
 
-```javascript
-import {
-  StartPayment,
-  Amount,
-  MerchantDetails,
-  MerchantCredentials,
-  Currency,
-} from "mu.mips.react-native-sdk/src";
-```
+### 🔹 React Native (Vanilla)
 
-#### 2. create order data and merchant data models
+Easily add the Mips Payment SDK to your React Native project.
 
-```Javascript
-const orderID = "YOUR_ORDER_ID";
+[![React Native Guide](https://img.shields.io/badge/React_Native_Guide-View_Now-blue?style=for-the-badge&logo=react)](https://www.shyankdev.us/blogs/mipsPayment/reactNative)
 
-const amount = new Amount(Currency.Mauritian_Rupee, 100);
-// replace currency and amount with required values
+[![React Native SDK Preview](https://www.shyankdev.us/images/rnThumbnail.jpg)](https://www.shyankdev.us/blogs/mipsPayment/reactNative)
 
-const detail = new MerchantDetails(
-	"XXXXX", //sIdMerchant
-	"XXXXX", //id_entity
-	"XXXXX", //id_operator
-	"XXXXX", //operator_password
-);
+---
 
-const cred = new MerchantCredentials(
-	"XXXXX", //username
-	"XXXXX" //password
-);
-// above info will be provided by MIPS admin
-```
+### 🔹 Expo (Managed Workflow)
 
-#### 3. Finally call `StartPayment` function to start the payment flow
+Integrate the Mips Payment SDK into your Expo-managed app — no native linking required.
 
-```Javascript
-StartPayment(
-	detail , cred , amount , orderID
-).then((paymentMode) => {
-	console.log("payment success with payment mode " + paymentMode)
-}).catch( (error) => {
-	console.log("payment failed with error " , error)
-})
+[![Expo Guide](https://img.shields.io/badge/Expo_Guide-View_Now-blue?style=for-the-badge&logo=expo)](https://www.shyankdev.us/blogs/mipsPayment/expo)
 
-// StartPayment will show the payment screen and notify once payment status changes
-```
+[![Expo SDK Preview](https://www.shyankdev.us/images/expo.png)](https://www.shyankdev.us/blogs/mipsPayment/expo)
 
-#### for eg:- we can call `StartPayment` on click of a button
+---
 
-```javascript
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Button
-        onPress={() => {
-          console.log("payment flow started");
-          StartPayment(detail, cred, amount, orderID)
-            .then((paymentMode) => {
-              // payment completed
-            })
-            .catch((error) => {
-              // payment failed
-            });
-        }}
-        title="click to pay"
-        color="#841584"
-      />
-    </View>
-  );
-}
-```
+## 📘 Documentation
+
+📄 For detailed installation and configuration steps, please visit:
+
+- **React Native Guide:** [https://www.shyankdev.us/blogs/mipsPayment/reactNative](https://www.shyankdev.us/blogs/mipsPayment/reactNative)
+- **Expo Guide:** [https://www.shyankdev.us/blogs/mipsPayment/expo](https://www.shyankdev.us/blogs/mipsPayment/expo)
+
+---
+
+## 🏢 Company
+
+**MIPS** – Secure Payment Solutions  
+🌐 [https://www.mips.mu/](https://www.mips.mu/)
+
+---
+
+## 🧑‍💻 Author
+
+Developed by **Shyank Dev**  
+🌐 [https://www.shyankdev.us/](https://www.shyankdev.us/)
